@@ -7,25 +7,16 @@ jobs:
     # где заускаем
     runs-on: ubuntu-latest
     # что делаем
-
-    services:
-      selenoid:
-        image: aerokube/selenoid:latest-release
-        ports:
-          - 4444:4444
-        volumes:
-          - /var/run/docker.sock:/var/run/docker.sock
-        options: --privileged
-
     steps:
       # выкачиваем репозиторий
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
       # настраиваем java
       - name: Set up JDK 17
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v3
         with:
           distribution: 'zulu'
           java-version: '17'
+      - uses: Xotabu4/selenoid-github-action@v2
 
       - name: Run tests
         # запускаем тесты
@@ -33,16 +24,15 @@ jobs:
 
       # скачиваем историю тестов
       - name: Checkout gh-pages history
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
         if: always()
         continue-on-error: true
         with:
           ref: gh-pages
           path: gh-pages
-
       # генерируем отчет
       - name: Generate Allure report
-        uses: simple-elf/allure-report-action@v1.7
+        uses: simple-elf/allure-report-action@master
         if: always()
         with:
           gh_pages: gh-pages
