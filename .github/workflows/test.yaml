@@ -1,6 +1,6 @@
 name: Test
-
-on: workflow_dispatch
+#можно еще workflow_dispatch
+on: [push]
 
 jobs:
   test:

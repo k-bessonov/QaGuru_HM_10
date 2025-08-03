@@ -2,6 +2,7 @@ package with.allure.tests;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
+import model.AttachmentUtils;
 import org.junit.jupiter.api.Test;
 
 import java.util.Objects;
@@ -29,7 +30,7 @@ public class AttachmentsTest {
         WebSteps steps = new WebSteps();
 
         steps.openMainPage();
-        steps.takeScreenshot();
+        AttachmentUtils.takeScreenshot();
     }
 
 }
