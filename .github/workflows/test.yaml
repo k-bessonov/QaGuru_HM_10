@@ -46,7 +46,7 @@ jobs:
       - name: Publish report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v2
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         if: always()
         with:
           publish_branch: gh-pages
