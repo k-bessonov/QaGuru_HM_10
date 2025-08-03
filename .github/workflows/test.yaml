@@ -45,11 +45,10 @@ jobs:
           allure_history: allure-history
       # публикуем отчет
       - name: Publish report to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3.9.3
-        env:
-          PERSONAL_TOKEN: ${{ secrets.GH_PAGES_TOKEN  }}
+        uses: peaceiris/actions-gh-pages@v4.0.0
         if: always()
         with:
+          github_token: ${{ secrets.GH_PAGES_TOKEN }}
           publish_branch: gh-pages
           publish_dir: allure-history
           allow_empty_commit: true
