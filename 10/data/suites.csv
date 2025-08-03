@@ -1,0 +1,8 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","7395","testIssueSearch()","","Sun Aug 03 00:55:35 GMT 2025","passed","Sun Aug 03 00:55:43 GMT 2025","","with.allure.tests.SelenideTest","with.allure.tests.SelenideTest","testIssueSearch"
+"","6157","testAnnotatedStep()","","Sun Aug 03 00:55:43 GMT 2025","passed","Sun Aug 03 00:55:49 GMT 2025","","with.allure.tests.StepsTest","with.allure.tests.StepsTest","testAnnotatedStep"
+"","6159","testLambdaStep()","","Sun Aug 03 00:55:49 GMT 2025","passed","Sun Aug 03 00:55:55 GMT 2025","","with.allure.tests.StepsTest","with.allure.tests.StepsTest","testLambdaStep"
+"","1","Создание Issue для авторизованного пользователя","","Sun Aug 03 00:55:35 GMT 2025","passed","Sun Aug 03 00:55:35 GMT 2025","","with.allure.tests.LabelsTest","with.allure.tests.LabelsTest","testDynamicLabels"
+"","1","Создание Issue для авторизованного пользователя","","Sun Aug 03 00:55:35 GMT 2025","passed","Sun Aug 03 00:55:35 GMT 2025","","with.allure.tests.LabelsTest","with.allure.tests.LabelsTest","testStaticLabels"
+"","3126","testLambdaAttachments()","","Sun Aug 03 00:55:30 GMT 2025","passed","Sun Aug 03 00:55:33 GMT 2025","","with.allure.tests.AttachmentsTest","with.allure.tests.AttachmentsTest","testLambdaAttachments"
+"","1761","testAnnotatedAttachments()","","Sun Aug 03 00:55:34 GMT 2025","passed","Sun Aug 03 00:55:35 GMT 2025","","with.allure.tests.AttachmentsTest","with.allure.tests.AttachmentsTest","testAnnotatedAttachments"
